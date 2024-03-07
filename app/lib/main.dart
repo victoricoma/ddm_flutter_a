@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new PerguntasApp());
-}
+void main() {}
 
-class PerguntasApp extends StatelessWidget {
+class PerguntaApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text('Ola Flutter'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Pergunta'),
+        ),
+        body: Column(),
+      ),
     );
   }
 }
