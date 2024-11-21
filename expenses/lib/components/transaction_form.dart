@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TransactionForm extends StatelessWidget {
-  TransactionForm({Key? key}) : super(key: key);
+  TransactionForm(Function(String title, double value) addTransaction, {Key? key}) : super(key: key);
   final titleController = TextEditingController();
   final valueController = TextEditingController();
 
